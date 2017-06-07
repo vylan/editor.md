@@ -61,7 +61,7 @@
     editormd.toolbarModes = {
         full: [
             "undo", "redo", "|",
-            "bold", "del", "italic", "quote", "ucwords", "uppercase", "lowercase", "|",
+            "bold", "del", "italic", "quote", "|",
             "h1", "h2", "h3", "h4", "h5", "h6", "|",
             "list-ul", "list-ol", "hr", "|",
             "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime", "html-entities", "pagebreak", "|",
@@ -330,7 +330,7 @@
     editormd.$CodeMirror = null;
     editormd.$prettyPrint = null;
 
-    var timer, flowchartTimer;
+    var timer, flowchartTimer, sourceLoaded = [];
 
     editormd.prototype = editormd.fn = {
         state: {
@@ -568,7 +568,6 @@
                 });
 
             });
-
             return this;
         },
 
@@ -3818,6 +3817,9 @@
 
     editormd.loadPlugin = function(fileName, callback, into) {
         callback = callback || function() {};
+        if(editormd.loadFiles.plugin.indexOf(fileName)!==-1){
+            return callback();
+        }
 
         this.loadScript(fileName, function() {
             editormd.loadFiles.plugin.push(fileName);
@@ -3837,6 +3839,9 @@
     editormd.loadCSS = function(fileName, callback, into) {
         into = into || "head";
         callback = callback || function() {};
+        if(editormd.loadFiles.css.indexOf(fileName)!==-1){
+            return callback();
+        }
 
         var css = document.createElement("link");
         css.type = "text/css";
@@ -3868,15 +3873,19 @@
      */
 
     editormd.loadScript = function(fileName, callback, into) {
-
         into = into || "head";
         callback = callback || function() {};
+
+        if(editormd.loadFiles.js.indexOf(fileName)!==-1){
+            return callback();
+        }
 
         var script = null;
         script = document.createElement("script");
         script.id = fileName.replace(/[\./]+/g, "-");
         script.type = "text/javascript";
         script.src = fileName + ".js";
+
 
         if (editormd.isIE8) {
             script.onreadystatechange = function() {
