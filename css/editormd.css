@@ -1344,7 +1344,6 @@ only screen and (min-device-pixel-ratio:3) {
     padding: 10px 15px 15px;
     overflow: auto;
     width: 100%;
-    background-color: #fff
 }
 
 .editormd-html-preview blockquote,
