@@ -364,7 +364,6 @@
             id = (typeof id === "object") ? settings.id : id;
 
             var editor = this.editor = elem;
-            console.log(editor)
 
             this.id = id;
             this.lang = settings.lang;
