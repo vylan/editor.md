@@ -49,8 +49,8 @@
      * @returns {Object} editormd     返回editormd对象
      */
 
-    var editormd = function(id, options) {
-        return new editormd.fn.init(id, options);
+    var editormd = function(id, elem, options) {
+        return new editormd.fn.init(id, elem, options);
     };
 
     editormd.title = editormd.$name = "Editor.md";
@@ -349,7 +349,7 @@
          * @returns {editormd}               返回editormd的实例对象
          */
 
-        init: function(id, options) {
+        init: function(id, elem, options) {
 
             options = options || {};
 
@@ -363,7 +363,8 @@
 
             id = (typeof id === "object") ? settings.id : id;
 
-            var editor = this.editor = $("#" + id);
+            var editor = this.editor = elem;
+            console.log(editor)
 
             this.id = id;
             this.lang = settings.lang;
