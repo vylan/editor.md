@@ -29,7 +29,7 @@ li.L8 {
     text-align: left;
     overflow: hidden;
     position: relative;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     font-family: "Meiryo UI", "Microsoft YaHei", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, Monaco, monospace, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif
 }
 
@@ -120,7 +120,7 @@ li.L8 {
     top: 0;
     left: 0;
     z-index: 10;
-    border-bottom: 1px solid #dde6e9
+    border-bottom: 1px solid #ddd
 }
 
 .editormd-toolbar-container {
@@ -147,7 +147,7 @@ li.L8 {
 .editormd-menu {
     margin: 0;
     list-style: none;
-    text-align:center;
+    text-align:left;
 }
 
 .editormd-menu>li {
@@ -162,7 +162,7 @@ li.L8 {
     text-indent: -9999px;
     margin: 0 5px;
     height: 65%;
-    border-right: 1px solid #dde6e9
+    border-right: 1px solid #ddd
 }
 
 .editormd-menu>li>a {
@@ -189,7 +189,7 @@ li.L8 {
 
 .editormd-menu>li>a.active,
 .editormd-menu>li>a:hover {
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     background: #eee
 }
 
@@ -216,7 +216,7 @@ li.L8 {
 .editormd-dropdown-menu {
     display: none;
     background: #fff;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     width: 148px;
     list-style: none;
     position: absolute;
@@ -264,7 +264,7 @@ li.L8 {
 }
 
 .editormd-dropdown-menu>li+li {
-    border-top: 1px solid #dde6e9
+    border-top: 1px solid #ddd
 }
 
 .editormd-container {
@@ -325,7 +325,7 @@ li.L8 {
 .editormd-dialog-container select {
     color: #999;
     padding: 3px 8px;
-    border: 1px solid #dde6e9
+    border: 1px solid #ddd
 }
 
 .editormd-dialog-close {
@@ -480,7 +480,7 @@ only screen and (min-device-pixel-ratio:3) {
 .editormd-grid-table {
     width: 99%;
     display: table;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     border-collapse: collapse
 }
 
@@ -497,7 +497,7 @@ only screen and (min-device-pixel-ratio:3) {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     text-decoration: none;
     -webkit-transition: background-color 300ms ease-out, color 100ms ease-in;
     -moz-transition: background-color 300ms ease-out, color 100ms ease-in;
@@ -516,7 +516,7 @@ only screen and (min-device-pixel-ratio:3) {
 
 .editormd-tab-head {
     list-style: none;
-    border-bottom: 1px solid #dde6e9
+    border-bottom: 1px solid #ddd
 }
 
 .editormd-tab-head li {
@@ -530,7 +530,7 @@ only screen and (min-device-pixel-ratio:3) {
     text-align: center;
     text-decoration: none;
     margin-bottom: -1px;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     -webkit-border-top-left-radius: 3px;
     -moz-border-top-left-radius: 3px;
     -ms-border-top-left-radius: 3px;
@@ -592,7 +592,7 @@ only screen and (min-device-pixel-ratio:3) {
 .editormd-form input[type=number] {
     color: #999;
     padding: 8px;
-    border: 1px solid #dde6e9
+    border: 1px solid #ddd
 }
 
 .editormd-form input[type=number] {
@@ -650,7 +650,7 @@ only screen and (min-device-pixel-ratio:3) {
     cursor: pointer;
     background: #fff;
     padding: 7px 10px;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -737,7 +737,7 @@ only screen and (min-device-pixel-ratio:3) {
 .editormd .CodeMirror {
     z-index: 10;
     float: left;
-    border-right: 1px solid #dde6e9;
+    border-right: 1px solid #ddd;
     font-size: 14px;
     font-family: "YaHei Consolas Hybrid", Consolas, "微软雅黑", "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, Monaco, courier, monospace;
     line-height: 1.6;
@@ -877,7 +877,7 @@ only screen and (min-device-pixel-ratio:3) {
     overflow: hidden;
     background: 0 0;
     border: 0;
-    border-bottom: 1px solid #dde6e9
+    border-bottom: 1px solid #ddd
 }
 
 .markdown-body h1,
@@ -1089,7 +1089,7 @@ only screen and (min-device-pixel-ratio:3) {
 .markdown-body blockquote {
     padding: 0 15px;
     color: #777;
-    border-left: 4px solid #dde6e9
+    border-left: 4px solid #ddd
 }
 
 .markdown-body blockquote>:first-child {
@@ -1117,7 +1117,7 @@ only screen and (min-device-pixel-ratio:3) {
 .markdown-body table td,
 .markdown-body table th {
     padding: 6px 13px;
-    border: 1px solid #dde6e9
+    border: 1px solid #ddd
 }
 
 .markdown-body table tr {
@@ -1349,7 +1349,7 @@ only screen and (min-device-pixel-ratio:3) {
 .editormd-html-preview blockquote,
 .editormd-preview-container blockquote {
     color: #666;
-    border-left: 4px solid #dde6e9;
+    border-left: 4px solid #ddd;
     padding-left: 20px;
     margin-left: 0;
     font-size: 14px;
@@ -1371,13 +1371,13 @@ only screen and (min-device-pixel-ratio:3) {
 .editormd-preview-container hr {
     height: 1px;
     border: none;
-    border-top: 1px solid #dde6e9;
+    border-top: 1px solid #ddd;
     background: 0 0
 }
 
 .editormd-html-preview code,
 .editormd-preview-container code {
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     background: #f6f6f6;
     padding: 3px;
     border-radius: 3px;
@@ -1386,7 +1386,7 @@ only screen and (min-device-pixel-ratio:3) {
 
 .editormd-html-preview pre,
 .editormd-preview-container pre {
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     background: #f6f6f6;
     padding: 10px;
     -webkit-border-radius: 3px;
@@ -1565,7 +1565,7 @@ li.L9 {
 .editormd-html-preview pre.prettyprint,
 .editormd-preview-container pre.prettyprint {
     padding: 10px;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     white-space: pre-wrap;
     word-wrap: break-word
 }
@@ -1602,7 +1602,7 @@ li.L9 {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     display: inline-block;
     font-size: 1em
 }
@@ -1618,7 +1618,7 @@ li.L9 {
     padding: 0 10px 10px;
     display: none;
     background: #fff;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
@@ -1635,7 +1635,7 @@ li.L9 {
 .editormd-preview-container .editormd-toc-menu>.markdown-toc>ul>li ul {
     width: 100%;
     min-width: 180px;
-    border: 1px solid #dde6e9;
+    border: 1px solid #ddd;
     display: none;
     background: #fff;
     -webkit-border-radius: 4px;
@@ -1874,7 +1874,7 @@ hr.editormd-page-break {
 }
 
 .editormd-preview-theme-dark .editormd-toc-menu>.markdown-toc h1 {
-    border-color: #dde6e9
+    border-color: #ddd
 }
 
 .editormd-preview-theme-dark .markdown-body h1,

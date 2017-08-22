@@ -70,11 +70,11 @@
         ],
         simple: [
             "undo", "redo", "|",
-            "bold", "del", "italic", "quote", "uppercase", "lowercase", "|",
+            "bold", "del", "italic", "quote", "|",
             "h1", "h2", "h3", "h4", "h5", "h6", "|",
             "list-ul", "list-ol", "hr", "|",
-            "watch", "preview", "fullscreen", "|",
-            "help", "info"
+            "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "pagebreak", "|",
+            "watch", "preview", "fullscreen"
         ],
         mini: [
             "undo", "redo", "|",
@@ -99,7 +99,7 @@
         delay: 300, // Delay parse markdown to html, Uint : ms
         autoLoadModules: true, // Automatic load dependent module files
         watch: true,
-        placeholder: "Enjoy Markdown! coding now...",
+        placeholder: "",
         gotoLine: true,
         codeFold: false,
         autoHeight: false,
@@ -110,7 +110,7 @@
         readOnly: false,
         tabSize: 4,
         indentUnit: 4,
-        lineNumbers: true,
+        lineNumbers: false,
         lineWrapping: true,
         autoCloseBrackets: true,
         showTrailingSpace: true,
@@ -124,7 +124,7 @@
         dialogDraggable: true,
         dialogMaskBgColor: "#fff",
         dialogMaskOpacity: 0.1,
-        fontSize: "13px",
+        fontSize: "14px",
         saveHTMLToTextarea: false,
         disabledKeyMaps: [],
 
@@ -167,7 +167,7 @@
 
         toolbar: true, // show/hide toolbar
         toolbarAutoFixed: true, // on window scroll auto fixed position
-        toolbarIcons: "full",
+        toolbarIcons: "simple",
         toolbarTitles: {},
         toolbarHandlers: {
             ucwords: function() {
