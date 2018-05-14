@@ -2957,7 +2957,7 @@
                 if (link === "" || link === "http://") {
                     cm.replaceSelection("![" + alt + "](" + url + altAttr + ")");
                 } else {
-                    cm.replaceSelection("[![" + alt + "](" + url + altAttr + ")](" + link + altAttr + ")");
+                    cm.replaceSelection("[![" + alt + "](" + url + altAttr + ")](" + link + ")");
                 }
 
                 if (alt === "") {

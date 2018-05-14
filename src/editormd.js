@@ -65,7 +65,7 @@
             "list-ul", "list-ol", "unfinished-task", "finished-task", "hr",
             "link", "reference-link", "image", "label", "code-block", "table", "pagebreak",
             "watch", "fullscreen",
-           // "help"
+            // "help"
         ],
         simple: [
             "undo", "redo",
@@ -138,7 +138,7 @@
         onfullscreenExit: function () {},
         onscroll: function () {},
         onpreviewscroll: function () {},
-        onImageUpload: function() {}, // 上传图片的回调函数，调用自定义的文件上传函数
+        onImageUpload: function () {}, // 上传图片的回调函数，调用自定义的文件上传函数
 
         imageUpload: false,
         imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
@@ -2945,11 +2945,26 @@
         },
 
         image: function () {
-            this.settings.onImageUpload(function(url){
+            var cm = this.cm;
+            var cursor = cm.getCursor();
+            this.settings.onImageUpload(function (url) {
                 // 返回图片的链接
-                console.log(url);
+                var alt = "图片标题"
+                var link = ""
+
+                var altAttr = (alt !== "") ? " \"" + alt + "\"" : "";
+
+                if (link === "" || link === "http://") {
+                    cm.replaceSelection("![" + alt + "](" + url + altAttr + ")");
+                } else {
+                    cm.replaceSelection("[![" + alt + "](" + url + altAttr + ")](" + link + ")");
+                }
+
+                if (alt === "") {
+                    cm.setCursor(cursor.line, cursor.ch + 2);
+                }
+
             });
-            // this.executePlugin("imageDialog", "image-dialog/image-dialog");
         },
 
         label: function () {
