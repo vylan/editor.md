@@ -2,12 +2,12 @@
  * Editor.md
  *
  * @file        editormd.js 
- * @version     v1.5.0 
+ * @version     v1.5.8 
  * @description Open source online markdown editor.
  * @license     MIT License
- * @author      Pandao
- * {@link       https://github.com/pandao/editor.md}
- * @updateTime  2015-06-09
+ * @author      gaoshi
+ * {@link       https://github.com/vylan/editor.md}
+ * @updateTime  2018-05-15
  */
 
 ;
